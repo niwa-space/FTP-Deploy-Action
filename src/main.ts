@@ -76,9 +76,9 @@ async function syncFiles(args: IActionArguments) {
           "--force",
           "--auto-init",
           "--verbose",
-          `--syncroot=${args.local_dir}`,
-          `--user=${args.ftp_username}`,
-          `--passwd=${args.ftp_password}`,
+          `--syncroot ${args.local_dir}`,
+          `--user ${args.ftp_username}`,
+          `--p ${args.ftp_password}`,
           args.gitFtpArgs!,
           args.ftp_server!
         ]
